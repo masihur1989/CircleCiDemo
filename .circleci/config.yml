@@ -12,6 +12,9 @@ jobs:
           name: update-npm 
           command: 'sudo npm install -g npm@latest'
       - run:
+          name: update-dependencies
+          command: 'npm install'
+      - run:
           name: Test
           command: |
             node --version
