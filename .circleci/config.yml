@@ -1,12 +1,11 @@
 version: 2
-general:
-  branches:
-    only:
-     - master
 jobs:
   build:
     docker:
       - image: circleci/node:4.8.2
+    branches:
+      only:
+        - master
     steps:
       - checkout
       - run:
