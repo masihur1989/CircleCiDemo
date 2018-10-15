@@ -13,4 +13,6 @@ jobs:
           command: 'sudo npm install -g npm@latest'
       - run:
           name: Test
-          command: 'npm test'
+          command: |
+            node --version
+	    npm --version
