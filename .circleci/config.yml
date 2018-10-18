@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node
+    working_directory: $CIRCLE_WORKING_DIRECTORY/CircleCiDemo
     branches:
       only:
         - master
